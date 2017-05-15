@@ -9,7 +9,7 @@ var stringifyJSON = function(obj) {
     return 'null';
   }
   // strings: return the string w/ double quotes
-   if (typeof obj === 'string') {
+  if (typeof obj === 'string') {
     return '"' + obj + '"';
   }
   // arrays, recursive
@@ -34,9 +34,8 @@ var stringifyJSON = function(obj) {
     } else {
       return '{}';
     }
-  }
-  // covers all other cases (booleans, numbers, undefined)
-  else {
+  } else {
+    // covers all other cases (booleans, numbers, undefined)
     return String(obj);
   }
 };
