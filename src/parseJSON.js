@@ -48,7 +48,7 @@ var parseJSON = function(json) {
   if (json[0] === '{') {
     if (json.length > 2) {
       var splitPairs = [];
-      var pairs = slicer(json).split(', "');
+      var pairs = slicer(json).split(', ');
       pairs.forEach(function(pair) {
         splitPairs.push(pair.split(': '));
       });
